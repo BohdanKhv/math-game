@@ -103,6 +103,7 @@ const MathGame = () => {
             interval = time > 0 && setInterval(() => {
                 setTime((time)=>time-1);
             }, 1000);
+            if(time === 0) setConfetti(true);
         }
 
         return () => {
